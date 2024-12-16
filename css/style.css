@@ -1,0 +1,1192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+/* HOME */
+
+.home {
+  width: 100%;
+  height: 100vh;
+  background: url("../images/47683308_2076297782429522_8043275634216009728_n.jpg")
+    no-repeat center center;
+  background-size: cover;
+  position: relative;
+}
+
+.home-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.home-header {
+  width: 100%;
+  height: 80px;
+  background-color: #000000a5;
+  position: fixed;
+  z-index: 100;
+  overflow: auto;
+}
+
+.home-nav {
+  float: right;
+}
+
+.home-logo {
+  color: #fff;
+  float: left;
+  cursor: pointer;
+  margin: 22px;
+  font-size: 22px;
+}
+
+.home-search {
+  position: relative;
+}
+
+.home ul {
+  list-style-type: none;
+}
+
+.home li {
+  float: left;
+  padding: 10px;
+  margin: 20px;
+  font-size: 15px;
+}
+
+.home input {
+  border: none;
+  width: 300px;
+  height: 30px;
+  border-radius: 10px;
+}
+
+.home-nav li a {
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+  padding-bottom: 6px;
+}
+
+.home-nav li a:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(255, 0, 0);
+  opacity: 0;
+}
+
+.home-nav li a:hover:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(255, 0, 0);
+  opacity: 1;
+  transition: all 0.7s ease;
+}
+
+.home-content {
+  width: 50%;
+  /* hero image  */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.home-title {
+  color: #fff;
+  font-size: 60px;
+  text-transform: uppercase;
+}
+
+.home-p {
+  color: #dfdfdf;
+  margin: 20px 0px;
+  letter-spacing: 2px;
+}
+
+.home-btn {
+  width: 145px;
+  height: 40px;
+  border: 0;
+  border-radius: 5px;
+  font-size: 17px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.home-btn2 {
+  background-color: red;
+  color: #fff;
+  margin-left: 10px;
+}
+
+.home-btn:hover {
+  opacity: 0.5;
+}
+
+/* HOME 2&3&4 */
+
+.home2-main-title,
+.home3-main-title,
+.home4-main-title {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.home2-line,
+.home2-line2,
+.home2-line3,
+.home3-line,
+.home3-line2,
+.home3-line3,
+.home4-line,
+.home4-line2,
+.home4-line3 {
+  display: inline-block;
+  width: 60px;
+  height: 2px;
+  background-color: #ff0000;
+  margin-bottom: 20px;
+}
+
+.home2-line,
+.home3-line,
+.home4-line {
+  margin-left: 43%;
+}
+
+.home2-parent1,
+.home3-parent1,
+.home3-parent2,
+.home4-parent1,
+.home4-parent2 {
+  width: 100%;
+  height: 275px;
+  overflow: auto;
+}
+
+.home2 .div1,
+.home2 .div2,
+.home2 .div3,
+.home3 .div1,
+.home3 .div2,
+.home3 .div3,
+.home3 .div4,
+.home3 .div5,
+.home3 .div6,
+.home4 .div1,
+.home4 .div2,
+.home4 .div3,
+.home4 .div4,
+.home4 .div5,
+.home4 .div6 {
+  width: 300px;
+  height: 225px;
+  margin: 20px;
+  float: left;
+  border-radius: 7px;
+  text-align: center;
+  background-color: #00000010;
+}
+
+.home h2,
+.home2 h2,
+.home2 p,
+.home3 h2,
+.home3 p,
+.home4 h2,
+.home4 p {
+  margin: 15px;
+  padding: 10px;
+}
+
+.home2 p,
+.home4 p {
+  color: rgb(178, 178, 180);
+}
+
+.home2 .home2-p,
+.home4 .home4-p {
+  color: red;
+  cursor: pointer;
+}
+
+.home2 i,
+.home4 i {
+  color: red;
+}
+
+.home2 .div1,
+.home3 .div1,
+.home3 .div4,
+.home4 .div1,
+.home4 .div4 {
+  margin-left: 160px;
+}
+
+/* ///////////////////////////////////////////////////////////////////// */
+
+/* Hover Effect for .home2-p in .div1, .div2, and .div3 */
+
+.home2-parent1 .div1:hover .home2-p,
+.home2-parent1 .div2:hover .home2-p,
+.home2-parent1 .div3:hover .home2-p {
+  color: rgba(255, 0, 0, 0.841);
+}
+
+/* Hover Effect for .iconsec2 in .div1, .div2, and .div3 */
+
+.home2-parent1 .div1:hover .iconsec2,
+.home2-parent1 .div2:hover .iconsec2,
+.home2-parent1 .div3:hover .iconsec2 {
+  color: rgba(255, 0, 0, 0.841);
+}
+
+/* Hover Effect for .iconsec2 in .div1, .div2, and .div3 */
+
+.home2-parent1 .div1:hover p,
+.home2-parent1 .div2:hover p,
+.home2-parent1 .div3:hover p {
+  color: #00000085;
+}
+
+/* Background Overlay Effect for .div1, .div2, and .div3 */
+
+.home2-parent1 .div1::after,
+.home2-parent1 .div2::after,
+.home2-parent1 .div3::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.142);
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.7s ease;
+}
+
+/* Activate Hover Effect for Background */
+
+.home2-parent1 .div1:hover::after,
+.home2-parent1 .div2:hover::after,
+.home2-parent1 .div3:hover::after {
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+}
+
+.home2-parent1 .div1,
+.home2-parent1 .div2,
+.home2-parent1 .div3 {
+  position: relative;
+  overflow: hidden;
+  /* Prevent pseudo-element overflow */
+}
+
+/* HOME 3 */
+
+.home3 {
+  background-color: #00000010;
+}
+
+.home3 .div1,
+.home3 .div2,
+.home3 .div3,
+.home3 .div4,
+.home3 .div5,
+.home3 .div6 {
+  background: url("../images/47683308_2076297782429522_8043275634216009728_n.jpg")
+    no-repeat center center;
+  background-size: cover;
+  border-radius: 10px;
+  position: relative;
+  /* Required for the sec3layer1 positioning */
+}
+
+/* Hover effect for sec3layer1 visibility on each div hover */
+
+.home3 .sec3layer1 {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  line-height: normal;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transition: 0.1s;
+  color: #fff;
+  text-align: center;
+  visibility: hidden;
+  border-radius: 10px;
+
+}
+
+/* Make sec3layer1 visible on hover for each div */
+
+.home3 .div1:hover .sec3layer1,
+.home3 .div2:hover .sec3layer1,
+.home3 .div3:hover .sec3layer1,
+.home3 .div4:hover .sec3layer1,
+.home3 .div5:hover .sec3layer1,
+.home3 .div6:hover .sec3layer1 {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Optional: styling for icons inside sec3layer1 */
+
+.home3 .sec3layer1 .h3category {
+  color: rgb(181, 181, 184);
+  text-transform: uppercase;
+  font-size: 30px;
+  padding-top: 50px;
+}
+
+.home3 .sec3layer1 .sec3icons {
+  line-height: 5;
+}
+
+.home3 .sec3layer1 .sec3icons a {
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+.home3 .sec3layer1 .sec3icons a:hover {
+  color: #ff0000;
+}
+
+/* Hover Effect for .home4-p in .div1, .div2, and .div3 */
+
+.home4-parent1 .div1:hover .home4-p,
+.home4-parent1 .div2:hover .home4-p,
+.home4-parent1 .div3:hover .home4-p,
+.home4-parent2 .div4:hover .home4-p,
+.home4-parent2 .div5:hover .home4-p,
+.home4-parent2 .div6:hover .home4-p {
+  color: rgba(255, 0, 0, 0.841);
+}
+
+/* Hover Effect for Icons in .div1, .div2, .div3, .div4, .div5, and .div6 */
+
+.home4-parent1 .div1:hover i,
+.home4-parent1 .div2:hover i,
+.home4-parent1 .div3:hover i,
+.home4-parent2 .div4:hover i,
+.home4-parent2 .div5:hover i,
+.home4-parent2 .div6:hover i {
+  color: rgba(255, 0, 0, 0.841);
+}
+
+/* Background Overlay Effect for .div1, .div2, .div3, .div4, .div5, and .div6 */
+
+.home4-parent1 .div1::after,
+.home4-parent1 .div2::after,
+.home4-parent1 .div3::after,
+.home4-parent2 .div4::after,
+.home4-parent2 .div5::after,
+.home4-parent2 .div6::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.142);
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.7s ease;
+
+}
+
+/* Activate Hover Effect for Background */
+
+.home4-parent1 .div1:hover::after,
+.home4-parent1 .div2:hover::after,
+.home4-parent1 .div3:hover::after,
+.home4-parent2 .div4:hover::after,
+.home4-parent2 .div5:hover::after,
+.home4-parent2 .div6:hover::after {
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  
+}
+
+/* Position Adjustment for Preventing Overflow */
+
+.home4-parent1 .div1,
+.home4-parent1 .div2,
+.home4-parent1 .div3,
+.home4-parent2 .div4,
+.home4-parent2 .div5,
+.home4-parent2 .div6 {
+  position: relative;
+  overflow: hidden;
+}
+
+.home4-parent1 .div1:hover p,
+.home4-parent1 .div2:hover p,
+.home4-parent1 .div3:hover p,
+.home4-parent2 .div4:hover p,
+.home4-parent2 .div5:hover p,
+.home4-parent2 .div6:hover p {
+  color: #00000085;
+}
+
+/* /////////////////////////////////////////////////////////////////////// */
+
+/* HOME 3 */
+
+.home3 {
+  background-color: #00000010;
+}
+
+.home3 .div1,
+.home3 .div2,
+.home3 .div3,
+.home3 .div4,
+.home3 .div5,
+.home3 .div6 {
+  background: url("../images/47683308_2076297782429522_8043275634216009728_n.jpg")
+    no-repeat center center;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+/* HOME5 */
+
+.home5-container {
+  width: 80%;
+  margin: auto;
+}
+
+.home5-parent {
+  height: 100vh;
+  overflow: auto;
+  padding-top: 50px;
+  margin-top: 90px;
+}
+
+.home5-choose {
+  float: left;
+  width: 40%;
+}
+
+.home5-choose2 {
+  width: 60%;
+  float: left;
+  padding-left: 187px;
+}
+
+.home5-title {
+  padding-top: 65px;
+}
+
+.home5-h2 {
+  text-transform: capitalize;
+  font-size: 40px;
+}
+
+.home5-hr {
+  width: 175px;
+  margin-top: 10px;
+  border: 2px solid rgb(255, 0, 0);
+}
+
+.home5-p {
+  color: rgb(178, 178, 180);
+  padding-top: 40px;
+}
+
+.home5-list {
+  list-style: none;
+  padding-top: 25px;
+}
+
+.home5-listul i {
+  color: red;
+}
+
+.home5 .home5-choose2 img {
+  border-radius: 10px;
+}
+
+.home5-bullet {
+  text-align: center;
+  list-style: none;
+}
+
+.home5-bullet li {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #ff0000;
+  border-radius: 50%;
+  margin: 15px 5px;
+}
+
+/* HOME 6 */
+
+.home6 {
+  width: 100%;
+  height: 500px;
+  background: url("../images/47683308_2076297782429522_8043275634216009728_n.jpg")
+    no-repeat center center fixed;
+  background-size: cover;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.sec6-container {
+  width: 80%;
+  margin: auto;
+}
+
+.sec6item {
+  float: left;
+  text-align: center;
+  width: 25%;
+}
+
+.sec6items {
+  padding-top: 180px;
+  overflow: auto;
+}
+
+.fas,
+.fa-solid {
+  font-weight: 900;
+}
+
+.sec6-item-icon {
+  color: #fff;
+  margin-bottom: 15px;
+  font-size: 40px;
+}
+
+.sec6-item-title {
+  color: #ff0000;
+}
+
+.sec6-item-text {
+  color: #fff;
+}
+
+/* HOME7 */
+
+.home7 .home7-main-title {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.home7 .home7-line,
+.home7 .home7-line2,
+.home7 .home7-line3 {
+  display: inline-block;
+  width: 60px;
+  height: 2px;
+  background-color: #ff0000;
+  margin-bottom: 20px;
+}
+
+.home7-line {
+  margin-left: 43%;
+}
+
+.home7 h2,
+.home7 p {
+  margin: 5px;
+  padding: 10px;
+}
+
+.home7-parent {
+  overflow: auto;
+}
+
+.home7 .div1,
+.home7 .div3 {
+  width: 250px;
+  height: 350px;
+  background-color: #fff;
+  float: left;
+  text-align: center;
+  border-radius: 7px;
+  margin: 80px auto;
+  margin-left: 200px;
+  border: 2px solid #00000010;
+  position: relative;
+  z-index: 0; /* Ensure pseudo-elements are layered properly */
+  overflow: visible; /* Allow child elements to overflow */
+}
+
+
+.home7 .div1:after,
+.home7 .div2:after,
+.home7 .div3:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.200);
+  transition: height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  opacity: 0.5;
+  border-radius: 5px;
+  z-index: -1;   /*Behind parent */
+}
+
+.home7 .div1:hover:after,
+.home7 .div2:hover:after,
+.home7 .div3:hover:after {  
+  height: 100%;
+  /* On hover, show :after */
+}
+
+
+
+
+.home7 .header {
+  position: absolute;
+  height: 200px;
+  width: 95%;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: -30px;
+  border-radius: 12px;
+  background-color: #00000010;
+  z-index: 10; /* Ensure it appears above parent */
+}
+
+
+.home7 .head-title {
+  margin-top: 5px;
+  margin-bottom: 15px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.home7 .img-title1 {
+  font-size: 27px;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  background-color: #fff;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.home7 .content {
+  position: absolute;
+  height: 126px;
+  left: 5px;
+  right: 5px;
+  top: 50%;
+  border-radius: 12px;
+}
+
+.home7 .content p {
+  width: 100%;
+  height: 28px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.home7 .footer {
+  position: absolute;
+  height: 60px;
+  bottom: -30px; /* Ensure it overflows parent container */
+  left: 0;
+  right: 0;
+  width: 95%;
+  margin: 0 auto;
+  border-radius: 12px;
+  background-color: red;
+  z-index: 10; /* Ensure it appears above parent */
+}
+
+.btn1,
+.btn2,
+.btn3 {
+  width: 180px;
+  height: 40px;
+  font-size: 15px;
+  background-color: red;
+  color: #fff;
+  border-radius: 7px;
+  border: none;
+  margin-top: 10px;
+}
+
+.home7 .div2 {
+  width: 300px;
+  height: 400px;
+  background-color: #fff;
+  float: left;
+  text-align: center;
+  border-radius: 7px;
+  margin: 50px 50px;
+  border: 2px solid #00000010;
+  position: relative;
+  z-index: 0; /* Ensure pseudo-elements are layered properly */
+  overflow: visible; /* Allow child elements to overflow */
+}
+
+
+.home7 .div3 {
+  width: 250px;
+  height: 350px;
+  background-color: #fff;
+  float: left;
+  text-align: center;
+  border-radius: 7px;
+  margin: 80px auto;
+  border: 2px solid #00000010;
+  position: relative;
+  z-index: 0; /* Ensure pseudo-elements are layered properly */
+  overflow: visible; /* Allow child elements to overflow */
+}
+
+
+/* HOME 8 */
+
+.home8 {
+  width: 100%;
+  height: 500px;
+  background: url("../images/47683308_2076297782429522_8043275634216009728_n.jpg")
+    no-repeat center center fixed;
+  background-size: cover;
+  position: relative;
+  margin-top: 130px;
+}
+
+.overlay-about {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.container-about {
+  width: 80%;
+  margin: auto;
+}
+
+.about-content {
+  margin: auto;
+  width: 90%;
+  height: 100%;
+  overflow: auto;
+}
+
+.about-item1 {
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+
+.about-item1-info {
+  text-transform: capitalize;
+  padding: 200px 40px 10px 150px;
+  position: relative;
+  line-height: 1.4;
+}
+
+.about-item1-info img {
+  border-radius: 50%;
+  position: absolute;
+  left: 50px;
+  top: 190px;
+}
+
+.about-p {
+  margin: 0px 30px 0px 50px;
+  line-height: 1.4;
+  text-transform: capitalize;
+  color: black;
+}
+
+.about-item1 {
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+
+.about-item1-info h3 {
+  font-size: 30px;
+  color: #fff;
+}
+
+.about-item1-info span {
+  color: rgb(255, 0, 0);
+  font-size: 20px;
+}
+
+.about-p {
+  margin: 0px 30px 0px 50px;
+  line-height: 1.4;
+  text-transform: capitalize;
+  color: #fff;
+}
+
+/* HOME 9 */
+
+.home9 .home9-main-title {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.home9 .home9-line,
+.home9 .home9-line2,
+.home9 .home9-line3 {
+  display: inline-block;
+  width: 60px;
+  height: 2px;
+  background-color: #ff0000;
+  margin-bottom: 20px;
+}
+
+.home9 .home9-line {
+  margin-left: 43%;
+}
+
+.home9 h2,
+.home9 p {
+  margin: 5px;
+  padding: 10px;
+}
+
+.team-container {
+  width: 80%;
+  margin: auto;
+}
+
+.team-parent {
+  overflow: auto;
+  height: 70vh;
+  margin-top: 25px;
+}
+
+.team-items {
+  float: left;
+  width: 30%;
+  background-color: #00000010;
+  text-align: center;
+  padding: 18px 14px;
+  position: relative;
+  border-radius: 10px;
+}
+.team-icons{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  visibility: hidden;
+}
+.team-items:hover .team-icons{
+  visibility: visible;
+}
+
+.team-items:after{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.200);
+  transition: .5s;
+  opacity: .5;
+  border-radius: 10px;
+  
+}
+.team-items:hover:after{
+width: 100%;
+height: 100%;
+opacity: 0.5;
+transition: 0.5s;
+}
+
+.team-div1-img1 {
+  width: 85%;
+  margin: auto;
+  position: relative;
+}
+
+.team-div1-img1 img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.team-icons {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  visibility: hidden;
+}
+
+.team-icons a {
+  width: 40px;
+  height: 40px;
+  display: block;
+  color: #fff;
+  background-color: rgb(101, 101, 236);
+  margin-left: auto;
+}
+
+.team-icons a i {
+  line-height: 40px;
+}
+
+h2 {
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  unicode-bidi: isolate;
+}
+
+.home9 p {
+  display: block;
+  color: #ff0000;
+}
+
+.team-item2 {
+  margin: 0px 5%;
+}
+
+.team-info-title {
+  text-transform: capitalize;
+  color: rgb(20, 20, 20);
+  padding: 12px 0px;
+}
+
+.team-info-paragraph {
+  text-transform: uppercase;
+  color: rgb(90, 88, 88);
+}
+
+/* HOME10 */
+
+.home10 .home10-main-title {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.home10 .home10-line,
+.home10 .home10-line2,
+.home10 .home10-line3 {
+  display: inline-block;
+  width: 60px;
+  height: 2px;
+  background-color: #ff0000;
+  margin-bottom: 20px;
+}
+
+.home10 .home10-line {
+  margin-left: 43%;
+}
+
+.home10 h2,
+.home10 p {
+  margin: 5px;
+  padding: 10px;
+}
+
+.news-container {
+  width: 100%;
+  margin: auto;
+}
+
+.news-parent {
+  height: auto;
+  margin-top: 25px;
+  overflow: auto;
+}
+
+.news-item {
+  width: 30%;
+  text-align: center;
+  height: auto;
+  float: left;
+  border: 2px solid #00000010;
+  border-radius: 10px;
+  position: relative;
+}
+
+.news-item:after{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.200);
+  transition: .5s;
+  opacity: .5;
+  border-radius: 10px;
+  z-index: -1;
+}
+.news-item:hover:after{
+width: 100%;
+height: 100%;
+opacity: 0.5;
+transition: 0.5s;
+}
+
+.news-item:hover h3 {
+  color: #ff0000;
+}
+
+.home10 .mg {
+  margin: 0px 5%;
+}
+
+.home10 .news-item img {
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.news-icons {
+  margin-bottom: 15px;
+}
+
+.news-icons ul {
+  list-style: none;
+}
+
+.news-icons ul li {
+  display: inline-block;
+  margin-right: 15px;
+  margin-top: 25px;
+}
+
+.news-icons h3 {
+  margin: 15px 0px;
+}
+
+.news-icons p {
+  margin-bottom: 25px;
+  color: rgb(90, 88, 88);
+}
+
+.ffff {
+  color: #ff0000;
+}
+
+.news-read-more {
+  color: red;
+  text-decoration: none;
+}
+
+/* HONE_FOOTER */
+
+.home11 {
+  width: 100%;
+  height: 300px;
+  background-color: #00000010;
+  padding: 20px 0px;
+  margin-top: 100px;
+  margin-bottom: 0;
+  position: relative;
+}
+
+.home11 .home11-content {
+  margin: auto;
+  width: 40%;
+  text-align: center;
+}
+
+.home11 .img-home11 {
+  height: 30%;
+}
+
+.home11 .img-home11,
+.home11 .img-home11 img {
+  width: 250px;
+  height: 200px;
+  margin: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%, -50%);
+}
+
+.home11 .home11-icons {
+  margin-top: 90px;
+}
+
+.home11 .home11-icons ul {
+  list-style: none;
+}
+
+.home11 .home11-icons ul li {
+  display: inline-block;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: #ff0000;
+  color: #fff;
+  font-size: 30px;
+  padding-top: 11px;
+}
+
+.home11 .fab,
+.home11.fa-brands {
+  font-weight: 400;
+}
+
+.home11 .home11-icons p {
+  font-size: 13px;
+  text-transform: uppercase;
+  color: rgb(100, 99, 99);
+  padding-top: 10px;
+}
